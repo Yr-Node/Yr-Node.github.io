@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yurim Kim — Data Science Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-name">Yurim Kim</a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#case-study">Case Study</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner reveal">
+      <p class="eyebrow">Data Science Portfolio</p>
+      <h1>데이터 뒤에 숨은 원인을 찾아,<br>다음 액션으로 연결합니다</h1>
+      <p class="hero-sub">김유림 · 가설 검증부터 의사결정까지 이어지는 분석을 만듭니다</p>
+      <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section section-white">
+    <div class="container">
+      <p class="section-num">01</p>
+      <p class="section-label">About</p>
+      <p class="about-line reveal">품질관리팀에서 2년간 '기준을 벗어난 원인'을 찾던 습관이, 지금은 데이터에서 원인을 찾는 일로 이어지고 있습니다.</p>
+      <div class="equation reveal">
+        <div class="eq-item">
+          <p class="eq-title">품질관리 실무 경험</p>
+        </div>
+        <span class="eq-op">+</span>
+        <div class="eq-item">
+          <p class="eq-title">데이터 분석 역량</p>
+        </div>
+        <span class="eq-op">=</span>
+        <div class="eq-item eq-result">
+          <p class="eq-title">문제를 숫자로 증명하는<br>주니어 분석가</p>
+        </div>
+      </div>
+      <p class="quote reveal">"기준에서 벗어난 지점을 찾는 것 — 품질관리에서도, 데이터 분석에서도 제가 하는 일은 같습니다."</p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="section-num">02</p>
+      <p class="section-label">Skills</p>
+      <div class="skill-groups reveal">
+        <div class="skill-group">
+          <p class="skill-group-title">Analysis</p>
+          <div class="badges">
+            <span class="badge">Python</span>
+            <span class="badge">SQL</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">통계적 가설검정</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-title">Machine Learning</p>
+          <div class="badges">
+            <span class="badge">scikit-learn</span>
+            <span class="badge">Random Forest</span>
+            <span class="badge">SARIMA</span>
+            <span class="badge">Feature Engineering</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-title">Visualization</p>
+          <div class="badges">
+            <span class="badge">Tableau</span>
+            <span class="badge">Matplotlib / Seaborn</span>
+            <span class="badge">Notion 리포팅</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-group-title">Collaboration</p>
+          <div class="badges">
+            <span class="badge">의사소통</span>
+            <span class="badge">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-white">
+    <div class="container">
+      <p class="section-num">03</p>
+      <div class="projects-head">
+        <p class="section-label">Projects</p>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">전체</button>
+          <button class="filter-btn" data-filter="team">Team</button>
+          <button class="filter-btn" data-filter="individual">Individual</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- Team 1 (Featured) -->
+        <article class="card card-featured reveal" data-type="team">
+          <span class="tag tag-team">Team</span>
+          <div class="card-featured-text">
+            <p class="card-eyebrow">Team 7 · 부트캠프 팀 프로젝트</p>
+            <h3>공유오피스 무료체험 결제 전환 분석</h3>
+            <p class="card-desc">2023년 9월 결제전환율 급락(39.6%→25.8%) 원인을 변화점탐지·z검정·퍼널단계분리로 통계적으로 특정</p>
+            <p class="card-role">담당: 급락 원인·단계진단 (그룹2)</p>
+          </div>
+          <div class="card-stat">
+            <span class="stat-value">p = 8.6×10⁻²⁰</span>
+            <span class="stat-label">방문 후 결제단계 문제로 원인 확정</span>
+          </div>
+        </article>
+
+        <!-- Team 2 -->
+        <article class="card reveal" data-type="team">
+          <span class="tag tag-team">Team</span>
+          <p class="card-eyebrow">Team 1 · 부트캠프 팀 프로젝트</p>
+          <h3>서울 지하철 동적 요금제 도입 분석</h3>
+          <p class="card-desc">혼잡 시간대·구간을 타겟팅한 동적 요금제를 설계하고 A/B 테스트 방안을 제안</p>
+          <div class="card-stat">
+            <span class="stat-value">A/B 테스트</span>
+            <span class="stat-label">혼잡구간 타겟팅 제안</span>
+          </div>
+          <p class="card-role">담당: 전원 공동 기획·분석·시각화</p>
+        </article>
+
+        <!-- Team 3 -->
+        <article class="card reveal" data-type="team">
+          <span class="tag tag-team">Team</span>
+          <p class="card-eyebrow">3팀 · 부트캠프 팀 프로젝트</p>
+          <h3>구독형 교육 서비스 이벤트 데이터 분석</h3>
+          <p class="card-desc">사용자 퍼널을 단계별로 분석하고 학습 행동 기반 세그먼트를 도출</p>
+          <div class="card-stat">
+            <span class="stat-value">퍼널 분석</span>
+            <span class="stat-label">학습 행동 세그먼트 도출</span>
+          </div>
+          <p class="card-role">담당: 전원 공동 기획·분석·시각화</p>
+        </article>
+
+        <!-- Individual 1 -->
+        <article class="card reveal" data-type="individual">
+          <span class="tag tag-individual">Individual</span>
+          <p class="card-eyebrow">Sprint Mission 14 · NLP</p>
+          <h3>SNS 텍스트 감정 분류</h3>
+          <p class="card-desc">TF-IDF(1~2gram) + Logistic Regression(class_weight=balanced)로 6개 감정 분류 모델 구축</p>
+          <div class="card-stat">
+            <span class="stat-value">Macro F1 0.843</span>
+            <span class="stat-label">Accuracy 87.8%, 이진분류 시 96.0%</span>
+          </div>
+        </article>
+
+        <!-- Individual 2 -->
+        <article class="card reveal" data-type="individual">
+          <span class="tag tag-individual">Individual</span>
+          <p class="card-eyebrow">Sprint Mission 15 · Time Series</p>
+          <h3>BMW 그룹 글로벌 판매 시계열 예측</h3>
+          <p class="card-desc">STL 분해로 계절성을 검증하고 SARIMA(2,1,2)(0,0,0,12)를 그리드서치로 최종 선정</p>
+          <div class="card-stat">
+            <span class="stat-value">MAE 14,723</span>
+            <span class="stat-label">2위 모델 대비 27%↓ 오차</span>
+          </div>
+        </article>
+
+        <!-- Individual 3 -->
+        <article class="card reveal" data-type="individual">
+          <span class="tag tag-individual">Individual</span>
+          <p class="card-eyebrow">Sprint Mission 13 · Clustering</p>
+          <h3>신용카드 고객 세그먼트 분석</h3>
+          <p class="card-desc">PCA(6개 성분, 설명분산 84%) + K-Means(k=5)로 고객 세그먼트 도출, 세그먼트별 마케팅 전략 제안</p>
+          <div class="card-stat">
+            <span class="stat-value">5개 세그먼트</span>
+            <span class="stat-label">silhouette 0.271</span>
+          </div>
+        </article>
+
+        <!-- Individual 4 -->
+        <article class="card reveal" data-type="individual">
+          <span class="tag tag-individual">Individual</span>
+          <p class="card-eyebrow">A/B Test</p>
+          <h3>멤버십 가격 UI A/B 테스트 분석</h3>
+          <p class="card-desc">연간 멤버십 월환산가 강조 디자인(B안)과 기존안(A안)을 비교, 통계 검정 기반으로 배포안 결정</p>
+          <div class="card-stat">
+            <span class="stat-value">ARPU 유의 증가</span>
+            <span class="stat-label">B안 채택, 단계적 적용 권고</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY -->
+  <section id="case-study" class="section section-dark">
+    <div class="container">
+      <p class="section-num section-num-light">04</p>
+      <p class="section-label section-label-light">Case Study</p>
+      <h2 class="case-title">무너진 결제, 그 원인을 추적하다</h2>
+      <p class="case-sub">공유오피스 3일체험 결제 전환 분석 · Team 7</p>
+
+      <div class="case-steps">
+
+        <div class="case-step reveal">
+          <span class="case-num">01</span>
+          <div class="case-body">
+            <p class="case-step-title">문제 발견 — 안정적이던 지표, 어느 날 무너지다</p>
+            <p class="case-step-desc">신청자 수·방문율·체류시간은 안정적으로 유지되는데, 결제전환율만 2023년 9월을 기점으로 무너져 있었다 (39.6% → 25.8%).</p>
+          </div>
+        </div>
+
+        <div class="case-step reveal">
+          <span class="case-num">02</span>
+          <div class="case-body">
+            <p class="case-step-title">가설 — 유입이 문제인가?</p>
+            <p class="case-step-desc">가장 먼저 유입 감소를 의심했다. 월평균 신청자 수(302명 → 292명)를 비교했지만 거의 변화가 없어, 유입 문제라는 가설은 배제했다.</p>
+          </div>
+        </div>
+
+        <div class="case-step reveal">
+          <span class="case-num">03</span>
+          <div class="case-body">
+            <p class="case-step-title">검증 — 어디서 무너졌는가</p>
+            <p class="case-step-desc">변화점탐지(PELT)와 두비율 z검정으로 2023년 9월이 정확한 급락 시점임을 통계적으로 확정했다(z=9.105, p=8.6×10⁻²⁰). 퍼널을 단계별로 쪼개보니 신청→방문 활성화율은 오히려 개선(66.5%→78.1%)됐는데, 방문→결제 전환율만 41.3%→26.7%로 급락 — 문제는 '방문 후 결제 결심 단계'에 있었다.</p>
+          </div>
+        </div>
+
+        <div class="case-step reveal">
+          <span class="case-num">04</span>
+          <div class="case-body">
+            <p class="case-step-title">결론 — 다음 액션</p>
+            <p class="case-step-desc">유입이 아니라 방문 이후 경험이 무너졌다는 근거를 팀에 제시했고, 이후 팀은 방문 후 결제 결심 단계에 개입하는 전략을 설계하는 방향으로 논의를 이어갔다.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box reveal">
+        <p class="contact-title">함께 이야기 나눠요</p>
+        <a href="mailto:yurim2096@gmail.com" class="btn btn-primary">이메일 보내기</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Yurim Kim</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
