@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yurim Kim — Data Science Portfolio</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background: #fafafa;
+    color: #1a1a1a;
+    line-height: 1.6;
+  }
+  header {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 24px 40px;
+  }
+  header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  header p { font-size: 16px; color: #555; }
+  .links { margin-top: 16px; }
+  .links a {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+  }
+  .links a:hover { background: #eee; }
+
+  main { max-width: 800px; margin: 0 auto; padding: 0 24px 80px; }
+  section { margin-bottom: 56px; }
+  section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 8px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 24px;
+    background: #fff;
+  }
+  .card h3 { font-size: 17px; margin-bottom: 6px; }
+  .card .tag {
+    display: inline-block;
+    font-size: 12px;
+    color: #444;
+    background: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin: 4px 4px 4px 0;
+  }
+  .card p { font-size: 14px; color: #444; margin: 10px 0; }
+  .card a { font-size: 14px; color: #0060df; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skills span {
+    font-size: 13px;
+    padding: 5px 12px;
+    background: #f0f0f0;
+    border-radius: 16px;
+  }
+
+  footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    font-size: 13px;
+    color: #888;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Yurim Kim</h1>
+  <p>Data Science / ML · Codeit 데이터 사이언스 부트캠프</p>
+  <div class="links">
+    <a href="https://github.com/yurimkim-yourlimforest">GitHub</a>
+    <a href="#">Resume</a>
+    <a href="#">Email</a>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <div class="card">
+        <h3>공유오피스 3일체험 결제전환 분석</h3>
+        <div>
+          <span class="tag">Team Project</span>
+          <span class="tag">Time Series</span>
+          <span class="tag">Statistical Testing</span>
+        </div>
+        <p>
+          공유오피스 서비스의 3일체험 데이터를 분석해 2023년 9월 결제전환율 급락 원인을
+          변화점탐지, 두 비율 z-test, 퍼널 단계 분리를 통해 통계적으로 규명.
+          방문 후 결제 결심 단계의 문제임을 특정하고 개선 방향을 제시함.
+        </p>
+        <a href="#">GitHub Repo →</a>
+      </div>
+
+      <div class="card">
+        <h3>BMW 글로벌 판매량 시계열 예측</h3>
+        <div>
+          <span class="tag">Time Series</span>
+          <span class="tag">ARIMA / Prophet</span>
+        </div>
+        <p>
+          STL 분해, 지수평활(Holt-Winters), ARIMA/SARIMA, Prophet 등 여러 예측 기법을
+          비교해 최적 모델을 선정한 시계열 예측 프로젝트.
+        </p>
+        <a href="#">GitHub Repo →</a>
+      </div>
+
+      <div class="card">
+        <h3>SNS 텍스트 감정 분류</h3>
+        <div>
+          <span class="tag">NLP</span>
+          <span class="tag">TF-IDF</span>
+        </div>
+        <p>
+          NLTK 기반 전처리(POS 태깅, 표제어 추출)와 TF-IDF + 로지스틱 회귀를 활용한
+          SNS 텍스트 감정 분류 파이프라인.
+        </p>
+        <a href="#">GitHub Repo →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>scikit-learn</span>
+      <span>NLTK</span>
+      <span>Statsmodels</span>
+      <span>Matplotlib / Seaborn</span>
+      <span>SQL</span>
+      <span>Git / GitHub</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Yurim Kim
+</footer>
+
+</body>
+</html>
