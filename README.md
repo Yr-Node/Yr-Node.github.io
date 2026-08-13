@@ -1,1 +1,3 @@
-# yurimkim-yourlimforest.github.io
+# Yurim Kim — Data Analyst Portfolio
+
+https://yr-node.github.io/
