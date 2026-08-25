@@ -6,11 +6,11 @@ if ('IntersectionObserver' in window) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const el = entry.target;
-        const group = el.closest('.project-grid, .skill-groups, .badges, .about-flow');
+        const group = el.closest('.project-grid, .skill-groups, .badges, .exp-domain-grid');
         let delay = 0;
 
         if (group) {
-          const siblings = Array.from(group.children).filter((c) => c.classList.contains('reveal') || c.classList.contains('card') || c.classList.contains('skill-group'));
+          const siblings = Array.from(group.children).filter((c) => c.classList.contains('reveal') || c.classList.contains('card') || c.classList.contains('skill-group') || c.classList.contains('exp-card'));
           delay = siblings.indexOf(el) * 80;
         }
 
